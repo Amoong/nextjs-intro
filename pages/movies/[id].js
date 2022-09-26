@@ -4,5 +4,9 @@ export default function Detail() {
   const router = useRouter();
   console.log(router);
 
-  return <h1>hello</h1>;
+  return (
+    <div>
+      <h1>{router.query.title || "Loading..."}</h1>
+    </div>
+  );
 }
